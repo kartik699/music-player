@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: #0c1027;
+    --white-color: white;
+}
+
+body {
+    background-color: var(--body-color);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 9999;
+    background-color: var(--body-color);
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.66);
+}
+
+#navbar a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.logo {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.logo a span {
+    font-weight: 900;
+}
+
+.nav-items {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin-left: 3px;
+    font-size: 1.2em;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20%;
+}
+
+.search-bar span {
+    color: var(--white-color);
+}
+
+.search-bar .magnifying-glass {
+    padding: 5px 3px 7px 5px;
+    background-color: #12193e;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.search-bar .mic {
+    padding: 5px 5px 7px 3px;
+    background-color: #12193e;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.search-bar input {
+    border: none;
+    position: relative;
+    z-index: 5;
+    background-color: #12193e;
+    padding: 6px 8px;
+    color: var(--white-color);
+}
+
+.notification {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.notification .bell {
+    color: var(--white-color);
+}
+
+.notification .bell::after {
+    content: "";
+    position: absolute;
+    left: 52%;
+    border-radius: 50%;
+    background-color: #f81111;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.user-photo {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.hamburger {
+    flex-basis: 5%;
+    display: none;
+}
+
+.hamburger .nav-toggle{
+    color: var(--white-color);
+    font-size: 1.7em;
+}
+
+#check {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* media queries */
+
+@media (max-width: 860px){
+    .photo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .notification {
+        justify-content: flex-end;
+    }
+
+    .notification .bell::after {
+        left: 93%;
+    }
+
+    .nav-items {
+        flex-basis: 40%;
+    }
+
+    .search-bar {
+        flex-basis: 30%;
+    }
+}
+
+@media (max-width: 748px){
+
+    .nav-items ul li {
+        margin-left: 1px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 692px){
+    .hamburger {
+        flex-basis: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+
+    #check:checked ~ .hamburger-menu {
+        display: flex;
+        flex-basis: 200px;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: 200px;
+        background-color: var(--body-color);
+        flex-shrink: 0;
+        gap: 10px;
+    }
+
+    .hamburger-menu > div {
+        margin-left: 1rem;
+    }
+
+    .nav-items {
+        visibility: hidden;
+        flex-basis: 0%;
+    }
+
+    .search-bar {
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+
+    .notification {
+        justify-content: flex-start;
+    }
+
+    .notification .bell::after {
+        left: 16%;
+    }
+
+    .user-photo {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 552px) {
+    .notification {
+        justify-content: center;
+    }
+
+    .notification .bell::after {
+        left: 52%;
+    }
+
+    .logo h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 460px){
+    .search-bar input {
+        width: 150px;
+    }
+
+    .search-bar .magnifying-glass {
+        padding: 4px 3px 4px 5px;
+    }
+
+    .search-bar .mic {
+        padding: 4px 3px 4px 5px;
+    }
+}

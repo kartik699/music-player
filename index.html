@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="shortcut icon" href="favicon/music.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/721e590641.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="navbar.css" type="text/css">
+        <title>Ninja Studio</title>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav id="navbar">
+            <div class="logo">
+              <a href="#">
+                <h2>Ninja<br><span>Studio</span></h2>
+              </a>
+            </div>
+            <div class="nav-items">
+                <ul class="horizontal-list">
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Favorites</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="search-bar">
+              <span class="magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i></span>
+              <input type="text" placeholder="Search">
+              <span class="mic"><i class="fa-solid fa-microphone"></i></span>
+            </div>
+            <div class="notification">
+              <span class="bell"><i class="fa-solid fa-bell fa-lg"></i></span>
+            </div>
+            <div class="user-photo">
+              <div class="photo"><img src="images/userpic.jpg" alt="user-pic"></div>
+            </div>
+            <div class="hamburger">
+              <input type="checkbox" id="check">
+              <label for="check" class="nav-toggle"><i class="fa-solid fa-bars"></i></label><br>
+              <div class="hamburger-menu">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="index.html">Favorites</a></div>
+              </div>
+            </div>
+        </nav>
+        <!-- main -->
+        <main id="main-content">
+          <div id="carousel-container" class="mb-3">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/playlists/playlist1.png" class="d-block w-100 resize-img" alt="playlist 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/playlists/playlist2.png" class="d-block w-100 resize-img" alt="playlist 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/playlists/playlist3.png" class="d-block w-100 resize-img" alt="playlist 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="latest-releases mx-lg-4 mx-sm-2 mx-1">
+            <h4 class="section-heading">Latest Release</h4>
+            <div class="release-info my-lg-4 my-sm-2 my-1">
+              <div>
+                <div class="album-image">
+                  <img src="images/releases/exile.jpg" alt="exile song">
+                  <div class="play-btn">
+                    <a href="#music-player"><i class="bi bi-play-fill"></i></a>
+                  </div>
+                </div>
+                <div class="album-details">
+                  <h6>Exile</h6>
+                  <p>24 JULY, 2020</p>
+                </div>
+                <div class="duration">
+                  <p>4:47</p>
+                </div>
+              </div>
+              <div>
+                <div class="album-image">
+                  <img src="images/releases/exile.jpg" alt="exile song">
+                  <div class="play-btn">
+                    <a href="#music-player"><i class="bi bi-play-fill"></i></a>
+                  </div>
+                </div>
+                <div class="album-details">
+                  <h6>Exile</h6>
+                  <p>24 JULY, 2020</p>
+                </div>
+                <div class="duration">
+                  <p>4:47</p>
+                </div>
+              </div>
+              <div>
+                <div class="album-image">
+                  <img src="images/releases/exile.jpg" alt="exile song">
+                  <div class="play-btn">
+                    <a href="#music-player"><i class="bi bi-play-fill"></i></a>
+                  </div>
+                </div>
+                <div class="album-details">
+                  <h6>Exile</h6>
+                  <p>24 JULY, 2020</p>
+                </div>
+                <div class="duration">
+                  <p>4:47</p>
+                </div>
+              </div>
+              <div>
+                <div class="album-image">
+                  <img src="images/releases/exile.jpg" alt="exile song">
+                  <div class="play-btn">
+                    <a href="#music-player"><i class="bi bi-play-fill"></i></a>
+                  </div>
+                </div>
+                <div class="album-details">
+                  <h6>Exile</h6>
+                  <p>24 JULY, 2020</p>
+                </div>
+                <div class="duration">
+                  <p>4:47</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular-artists">
+            <h4 class="section-heading ms-3 mb-4">Popular Artists</h4>
+            <div class="artist-container mb-4 ps-md-3 ps-1">
+              <figure>
+                <img src="images/artists/taylorswift.jpg" alt="taylor swift">
+                <figcaption>Taylor swift</figcaption>
+              </figure>
+              <figure>
+                <a href="coldplay.html"><img src="images/artists/coldplay.jpg" alt="coldplay"></a>
+                <figcaption>ColdPlay</figcaption>
+              </figure>
+              <figure>
+                <img src="images/artists/zayn.jpg" alt="zayn">
+                <figcaption>Zayn</figcaption>
+              </figure>
+              <figure>
+                <img src="images/artists/littlemix.jpg" alt="little mix">
+                <figcaption>Little Mix</figcaption>
+              </figure>
+              <figure>
+                <img src="images/artists/lewis.jpg" alt="lewis capaldi">
+                <figcaption>Lewis Capaldi</figcaption>
+              </figure>
+              <figure>
+                <img src="images/artists/weeknd.jpg" alt="weeknd">
+                <figcaption>The Weeknd</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="genres mb-4">
+            <div class="party">
+              <p class="text-white fs-3 fw-bold">Party</p>
+              <div class="background"></div>
+              <img src="images/genres/party.jpg" alt="party">
+            </div>
+            <div class="electronic">
+              <p class="text-white fs-3 fw-bold">Electronic</p>
+              <div class="background"></div>
+              <img src="images/genres/electronic.jpg" alt="electronic">
+            </div>
+            <div class="road-trip">
+              <p class="text-white fs-3 fw-bold">Road Trip</p>
+              <div class="background"></div>
+              <img src="images/genres/road-trip.jpg" alt="road trip">
+            </div>
+          </div>
+          <div class="latest-eng mb-4">
+            <h4 class="section-heading m-3">Latest English</h4>
+            <div class="song-container">
+              <figure>
+                <img src="images/songs/blindlights.jpg" alt="blinding lights">
+                <figcaption>Blinding Lights</figcaption>
+                <figcaption class="lighter">Nov 29, 2019</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/alltoowell.jpg" alt="blinding lights">
+                <figcaption>All Too Well</figcaption>
+                <figcaption class="lighter">Nov 13, 2021</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/starboy.jpg" alt="blinding lights">
+                <figcaption>StarBoy</figcaption>
+                <figcaption class="lighter">Nov 25, 2016</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/blindlights.jpg" alt="blinding lights">
+                <figcaption>Blinding Lights</figcaption>
+                <figcaption class="lighter">Nov 29, 2019</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/alltoowell.jpg" alt="blinding lights">
+                <figcaption>All Too Well</figcaption>
+                <figcaption class="lighter">Nov 13, 2021</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/starboy.jpg" alt="blinding lights">
+                <figcaption>StarBoy</figcaption>
+                <figcaption class="lighter">Nov 25, 2016</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="latest-hin mb-4">
+            <h4 class="section-heading m-3">Latest Hindi</h4>
+            <div class="song-container">
+              <figure>
+                <img src="images/songs/blindlights.jpg" alt="blinding lights">
+                <figcaption>Blinding Lights</figcaption>
+                <figcaption class="lighter">Nov 29, 2019</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/alltoowell.jpg" alt="blinding lights">
+                <figcaption>All Too Well</figcaption>
+                <figcaption class="lighter">Nov 13, 2021</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/starboy.jpg" alt="blinding lights">
+                <figcaption>StarBoy</figcaption>
+                <figcaption class="lighter">Nov 25, 2016</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/blindlights.jpg" alt="blinding lights">
+                <figcaption>Blinding Lights</figcaption>
+                <figcaption class="lighter">Nov 29, 2019</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/alltoowell.jpg" alt="blinding lights">
+                <figcaption>All Too Well</figcaption>
+                <figcaption class="lighter">Nov 13, 2021</figcaption>
+              </figure>
+              <figure>
+                <img src="images/songs/starboy.jpg" alt="blinding lights">
+                <figcaption>StarBoy</figcaption>
+                <figcaption class="lighter">Nov 25, 2016</figcaption>
+              </figure>
+            </div>
+          </div>
+        </main>
+        <!-- aside -->
+        <aside id="queue">
+          <div class="header-container">
+            <h4 class="section-heading">Queue</h4>
+            <div class="dropdown-container">
+              <a href="#mydropdown"><span>Queue&emsp;&emsp;<span>v</span></span></a>
+              <div id="mydropdown">
+                <ul class="queue-options">
+                  <a href="#"><li>Playlists</li></a>
+                  <hr />
+                  <a href="#"><li>Favourite Songs</li></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <section class="queue-songs">
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">01</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">02</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">03</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">04</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">05</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">06</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">07</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">08</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">09</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">10</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">11</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">12</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">13</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">14</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">15</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">16</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">17</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">18</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">19</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">01</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">20</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="song mb-md-3 mb-1">
+              <div class="song-no">
+                <span class="lighter text-white">21</span>
+              </div>
+              <div class="song-image">
+                <img src="images/songs/starboy.jpg" alt="starboy song">
+              </div>
+              <div class="song-desc">
+                <p>StarBoy</p>
+                <p class="lighter">The Weeknd</p>
+              </div>
+              <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+          </section>
+        </aside>
+        <!-- bottom music player -->
+        <section id="music-player">
+          <div class="song-content">
+            <div class="song-photo"><img src="images/releases/exile.jpg" alt="exile"></div>
+            <div class="player-song-desc text-white fw-bold">
+              <span>Exile</span>
+              <span class="lighter">Taylor Swift</span>
+            </div>
+            <div class="like-exit text-white lighter">
+              <span><i class="fa-regular fa-heart"></i></span> <!--click this to hide music player-->
+              <span><a href="#"><i class="fa-solid fa-ban"></i></a></span>
+            </div>
+          </div>
+          <div class="song-controls">
+            <div class="player-controls text-white">
+              <span><i class="bi bi-shuffle"></i></span>
+              <span><i class="fa-solid fa-play" style="transform: rotate(180deg);"></i></span>
+              <span><i class="bi bi-pause-circle" style="font-size: 1.2em;"></i></span>
+              <span><i class="fa-solid fa-play"></i></span>
+              <span><i class="fa-solid fa-repeat"></i></span>
+            </div>
+            <div class="container-slider">
+              <span class="lighter text-white">1:39</span>
+              <div class="playslidecontainer m-auto">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
+              <span class="lighter text-white">4:47</span>
+            </div>
+          </div>
+          <div class="other-controls text-white">
+            <span><i class="bi bi-music-note-list"></i></span>
+            <span><i class="bi bi-music-player"></i></span>
+            <span><i class="bi bi-volume-up"></i></span>
+            <div class="volslidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+            <span><i class="bi bi-arrows-fullscreen"></i></span>
+          </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
